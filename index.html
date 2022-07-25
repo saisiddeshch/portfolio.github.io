@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sai Siddesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-items">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li onclick="viewresume()"><a href="#">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="siddesh-container">
+        <div class="matter">
+            <h1 class="siddesh">Hi, <br> I am Aditya Sai Siddesh.</h1> <br> <br>
+            <p class="itsupport">An entry-level IT professional <br>
+                seeking a full-time
+                role in Information Technology. <br>
+                Completed the Google IT Support Professional Certificate <br>
+                developed by Google from Coursera.</p>
+        </div>
+
+        <div class="image">
+            <img class="propic" src="propic.png" alt="profile picture">
+        </div>
+    </div>
+
+
+
+    <div class="education-section reveal">
+        <h1 class="education">Education</h1> 
+        <p class="btech">Bachelor of Technology | 2019 - 2023</p>
+        <p class="btech">Andhra University, Visakhapatnam.</p>
+        <br> <br>
+        <p class="btech">Intermediate | 2017 - 2019</p>
+        <p class="btech">Ascent Junior College, Visakhapatnam</p>
+        <br> <br>
+        <p class="btech">Secondary School Certificate | 2016-2017</p>
+        <p class="btech">Sri Prakash Vidyanikethan, Visakhaptnam.</p>
+    </div>
+
+    <div class="certifications reveal">
+        <h1 class="candt">Certifications & Trainings</h1> 
+        <div class="certificate">
+            <p class="btech">Google IT Support </p>
+            <p class="info">> Eight-month IT support program, <br> developed by Google,
+                that covers troubleshooting, <br> system administration, networking, operating systems,
+                <br> and includes hands-on labs.
+            </p>
+            <button class="certificate-btn" onclick="view1()">View Certificate</button>
+            <br> <br>
+        </div>
+        <div class="certificate">
+            <p class="btech">Python Course</p>
+            <p class="info">> This course is designed to teach the foundations <br> in order to write
+                simple programs in Python <br> using the most common structures.</p>
+            <button class="certificate-btn" onclick="view2()">View Certificate</button> <br> <br>
+        </div>
+        <div class="certificate">
+            <p class="btech">Visakhapatnam Port Trust</p>
+            <p class="info">> A two weeks training program, specifically developed <br> to provide
+                practical knowledge on working of various <br> equipment that
+                is used by port authority including <br> RADAR, SONAR, RFID authentication system, <br>
+                Electronic Railway Weighbridges, Radiation Detectors, <br> and VHF communication system.</p>
+            <button class="certificate-btn" onclick="view3()">View Certificate</button>
+        </div>
+
+    </div>
+
+    <script>
+        function view1() {
+            window.open("google-it.pdf");
+        }
+
+        function view2() {
+            window.open("python.pdf");
+        }
+
+        function view3() {
+            window.open("vpt.pdf")
+        }
+
+        function viewresume() {
+            window.open("resume.pdf");
+        }
+
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 170;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+
+    <div class="projects-container reveal">
+        <h1 class="project">Projects</h1>
+        <p class="projects">> Stackable Crypto Currency Mining Rig</p>
+        <p class="projects">> Portfolio Website</p>
+    </div> <hr>
+
+    <footer>
+        <h3 class="ever">"Arise awake and stop not<br>
+            till the goal is reached"</h3>
+        
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    
+}
+
+
+
+/*HEADING STYLING*/
+.siddesh {
+    font-family: 'kanit';
+    font-size: 3rem;
+    color: #404B69;
+    margin-top: 210px;
+    display: inline-block;
+}
+
+.siddesh-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-top: 115px;
+}
+
+.itsupport {
+    font-family: 'kanit';
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #DBEDF3;
+}
+
+.propic {
+    height: 400px;
+    margin-left: 60px;
+}
+
+/*NAVBAR STYLING*/
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'kanit';
+    font-size: 1.4rem;
+    padding: 50px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+li:hover {
+    background-color: #DA0463;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 23px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transform: scale(1.2);
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+.image {
+    display: inline;
+}
+
+/*EDUCATION STYLING*/
+.education-section {
+    width: 900px;
+    /* margin-left: 970px; */
+    margin-top: 310px;
+    margin-left: 285px;
+    margin-right: 0;
+}
+
+.education {
+    /* display: flex;
+    justify-content: flex-start; */
+    /* margin-left: 165px; */
+    font-family: 'kanit';
+    font-size: 3.5rem;
+    /* margin-top: 310px; */
+    color: #404B69;
+}
+
+
+
+.candt {
+    display: flex;
+    justify-content: flex-start;
+
+    font-family: 'kanit';
+    font-size: 3.5rem;
+    color: #404B69;
+}
+
+.btech {
+    /* display: flex;
+    justify-content: flex-start; */
+    font-family: 'kanit';
+    font-size: 2.5rem;
+    margin-top: 5px;
+    /* margin-left: 165px; */
+    color: #DBEDF3;
+    line-height: 40px;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'kanit';
+    font-size: 1.5rem;
+    margin-top: 5px;
+
+    color: #DBEDF3;
+}
+
+/*PROJECTS STYLING*/
+.projects {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'kanit';
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: #DBEDF3;
+}
+
+.project {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'kanit';
+    font-size: 3.5rem;
+    margin-top: 100px;
+    color: #404B69;
+}
+
+.projects-container {
+    /* width: 80%; */
+    margin-left: 284px;
+}
+
+/*BUTTONS STYLING*/
+.certificate-btn {
+    padding: 6px 12px;
+
+    margin-top: 5px;
+    background-color: #404B69;
+    color: white;
+    font-family: 'kanit';
+    font-size: 1.1rem;
+    border-style: none;
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: opacity 0.85s;
+    height: 51px;
+}
+
+.certificate-btn:hover {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.certificate-btn:active {
+    font-size: 1.1rem;
+    opacity: 0.6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #404B69;
+
+}
+
+.footer-items li a {
+    font-size: 1.2rem;
+
+}
+
+.footer-items ul {
+    margin-right: 18px;
+}
+
+.footer-items li {
+    cursor: pointer;
+}
+
+.ever {
+    font-family: 'kanit';
+    font-size: 1.5rem;
+    margin-left: 9%;
+    line-height: 30px;
+    margin-top: 8px;
+}
+
+/* certificates */
+.certifications {
+    /* width: 80%; */
+    margin-left: 286px;
+    margin-top: 295px;
+
+}
+
+#certificate_1 {
+    display: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .education-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .certifications,
+    .projects-container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .footer-items ul li a {
+        padding: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1120px) {
+
+    .siddesh-container,
+    .certifications,
+    .education-section,
+    .projects-container {
+        transform: scale(0.9);
+    }
+
+    .education-section {
+        width: 80%;
+    }
+
+    .certifications {
+        width: 80%;
+    }
+
+    .projects-container {
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .propic {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 936px) {
+    .siddesh {
+        font-size: 2.5rem;
+    }
+
+    .education {
+        font-size: 2.5rem;
+    }
+
+    .candt {
+        font-size: 2.5rem;
+
+    }
+
+    .project {
+        font-size: 2.5rem;
+    }
+
+
+
+    .btech {
+        font-size: 2.0rem;
+    }
+}
+    .itsupport p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 853px) {
+   .footer-items ul li a {
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-items ul li a {
+         font-size: 0.9rem;
+     }
+ 
+ }
+
+@media only screen and (max-width: 970px) {
+    .itsupport {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .siddesh-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .propic {
+        margin: 0 auto;
+    }
+    .matter br {
+        content: ' ';
+    }
+    .siddesh {
+        margin-top: 20px;
+    }
+
+    .itsupport {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .nav-items ul li a {
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 743px){
+    .nav-items ul li a {
+        padding: 20px;
+    }
+
+    .info{
+        font-size: 1.4rem;
+    }
+    .btech{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and ( max-width: 717px){
+    .ever{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and ( max-width: 681px){
+    .info{
+        font-size: 1.2rem;
+    }
+    .btech{
+        font-size: 1.6rem;
+    }
+    .projects{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and ( max-width: 720px){
+    .nav-items ul li a {
+        padding: 15px;
+    }
+}
+@media only screen and ( max-width: 616px){
+    .nav-items ul li a {
+        padding: 13px;
+    }
+}
+
+@media only screen and ( max-width: 682px){
+    .footer-items ul li a {
+        padding: 2px;
+    }
+}
+@media only screen and (max-width: 596px){
+    .btech {
+        font-size: 1.4rem;
+    }
+    .info {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and ( max-width: 596px){
+    .projects {
+        font-size: 1rem;
+    }
+}
+@media only screen and ( max-width: 570px){
+    .candt {
+        font-size: 2.3rem;
+    }
+    .candt .btech {
+        line-height: 55px;
+        font-size: 25px;
+    }
+}
+@media only screen and ( max-width: 390px){
+    .candt {
+        font-size: 1.6rem;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
+@media only screen and ( max-width: 518px){
+    .candt {
+        font-size: 2.2rem;
+    }
+    .education .btech {
+        font-size: 1.2rem;
+    }
+    .certificate .btech {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and ( max-width: 530px){
+    .nav-items ul li a {
+        font-size: 1rem;
+    }
+
+    .matter h1 {
+        font-size: 2.2rem;
+    }
+}  
+
+@media only screen and ( max-width: 448px){
+    .certificate .btech {
+    font-size: 18px;
+    line-height: 30px;
+    }
+}  
+@media only screen and ( max-width: 470px){
+    .matter h1 {
+        font-size: 1.8rem;
+    }
+    .certificate-btn {
+        font-size: 0.75rem;
+        height: 35px;
+    }
+}   
+@media only screen and ( max-width: 435px){
+    .nav-items ul li a {
+        font-size:0.95rem;
+        padding: 6px;
+    }
+}   
+@media only screen and ( max-width: 380px){
+    .matter h1 {
+        font-size: 28px;
+    }
+    .itsupport{
+        font-size: 1.2rem;
+    }
+    .education {
+        font-size: 2.3rem;
+    }
+    .btech {
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .candt {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+    .project {
+        font-size: 1.6rem;
+    }
+}       
+@media only screen and ( max-width: 490px){
+    .info {
+    font-size: 11px;    
+    }
+}
+
+@media only screen and ( max-width: 520px){
+    .nav-items ul li a {
+        font-size:0.95rem;
+        padding: 6px;
+    }
+}  
